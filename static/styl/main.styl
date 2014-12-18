@@ -1,0 +1,39 @@
+@import "nib"
+@import "normalize.styl"
+@import "fonts.styl"
+@import "icons.styl"
+
+naranja_mozart = #FFA504
+gris_mozart = #F1F1F1
+azul_mozart = #2475E0
+
+.Header
+	background gris_mozart
+	border-bottom 2px solid azul_mozart
+	position fixed
+	top 0
+	width 100%
+
+.Header-button
+	font-size 1.9em
+	position absolute
+	right 0.5em
+	top 0.3em
+	z-index 1
+	
+.Header-Logo
+	float left
+	margin 0.4em 0.4em 0.6em 1em
+	padding 0
+
+.OptionMenu
+	background red
+	height 100%
+	position fixed
+	right -200px
+	transition 0.4s
+	width 200px
+	z-index 999
+	&.is-active
+		right 0
+	
