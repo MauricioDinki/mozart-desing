@@ -21,3 +21,5 @@ var mc = new Hammer($section);
 
 mc.on('panleft',showMenu);
 mc.on('panright',hideMenu);
+
+mc.add(new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 50 }));
