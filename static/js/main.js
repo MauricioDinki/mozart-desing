@@ -1,28 +1,23 @@
-var $section = document.querySelector('section');
-var $buttonMenu = document.getElementById('button-action');
-var $menu = document.getElementById('menu-slide');
-var $body = document.querySelector('body');
+// var $section = document.querySelector('section');
+// var $buttonMenu = document.getElementById('button-action');
+// var $menu = document.getElementById('menu-slide');
+// var $body = document.querySelector('body');
 
 
-var showMenu = function () {
-	$menu.classList.add('is-active');
-	$body.classList.add('hidden');
-}
+// var showMenu = function () {
+// 	$menu.classList.add('is-active');
+// }
 
-var hideMenu = function () {
-	$menu.classList.remove('is-active');
-	$body.classList.remove('hidden');
-}
+// var hideMenu = function () {
+// 	$menu.classList.remove('is-active');
+// }
 
-$buttonMenu.addEventListener("mouseover",showMenu);
-$buttonMenu.addEventListener("mouseout",hideMenu);
+// $buttonMenu.addEventListener("click",showMenu);
+// $buttonMenu.addEventListener("click",hideMenu);
 
-$menu.addEventListener("mouseover",showMenu);
-$menu.addEventListener("mouseout",hideMenu);
+// var mc = new Hammer($section);
 
-var mc = new Hammer($section);
+// mc.on('panleft',showMenu);
+// mc.on('panright',hideMenu);
 
-mc.on('panleft',showMenu);
-mc.on('panright',hideMenu);
-
-mc.add(new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 50 }));
+// mc.add(new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 50 }));
