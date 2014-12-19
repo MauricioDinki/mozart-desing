@@ -15,6 +15,7 @@ azul_mozart = #2475E0
 	width 100%
 
 .Header-button
+	color naranja_mozart
 	font-size 1.9em
 	position absolute
 	right 0.5em
@@ -25,6 +26,33 @@ azul_mozart = #2475E0
 	float left
 	margin 0.4em 0.4em 0.6em 1em
 	padding 0
+
+.Navbar
+	background azul_mozart
+	position fixed
+	text-align center
+	top 3.5em
+	width 100%
+
+.Navbar-link
+	color #538DEC
+	font-size 2.3em
+	padding 0.3em
+	text-decoration none
+	transition color 0.15s
+	&:hover
+		color naranja_mozart
+
+.Navbar-list
+	list-style none
+	margin 0
+	padding 0
+	white-space nowrap
+	overflow-x auto
+	overflow-y hidden
+
+.Navbar-option
+	display inline-block
 
 .OptionMenu
 	background linear-gradient(45deg, #B27301 0%, #FFAE1D 100%)
@@ -55,7 +83,10 @@ azul_mozart = #2475E0
 	display block
 	position relative
 	padding 1em 1em
-
+	font-weight 700
+	&.text-center
+		text-align center
+	
 .OptionMenu-title
 	font-weight 500
 	text-align center
@@ -64,7 +95,6 @@ azul_mozart = #2475E0
 	position absolute
 	line-height 50px
 	margin-left 1em
-	font-weight 700
 	
 	
 	

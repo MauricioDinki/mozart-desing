@@ -1,4 +1,4 @@
-var $body = document.querySelector('body');
+var $section = document.querySelector('section');
 var $buttonMenu = document.getElementById('button-action');
 var $menu = document.getElementById('menu-slide');
 
@@ -17,7 +17,7 @@ $buttonMenu.addEventListener("mouseout",hideMenu);
 $menu.addEventListener("mouseover",showMenu);
 $menu.addEventListener("mouseout",hideMenu);
 
-var mc = new Hammer($body);
+var mc = new Hammer($section);
 
 mc.on('panleft',showMenu);
 mc.on('panright',hideMenu);
