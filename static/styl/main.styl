@@ -19,6 +19,7 @@ body
 	top 0
 	width 100%
 	z-index 3
+	height 3.75em
 
 .Header-button
 	color naranja_mozart
@@ -36,9 +37,10 @@ body
 
 .Navbar
 	background azul_mozart
+	border-top 5px solid transparent
 	position fixed
 	text-align center
-	top 3.4em
+	top 3.7em
 	width 100%
 	z-index 2
 
@@ -112,7 +114,7 @@ body
 			border-radius 50%
 
 .Work-container
-	margin-top 6.7em
+	margin-top 7em
 	padding-top 0.6em
 	position relative
 	text-align center
@@ -135,7 +137,7 @@ body
 	box-shadow 2px 2px 10px rgba(black, 0.5)
 	display inline-block
 	height auto
-	margin 0.6em 1em
+	margin 0.6em 0.4em
 	position relative
 	width 300px
 	border 1px solid gray
@@ -150,5 +152,46 @@ body
 
 	a
 		color black
-		font-family 'mozArt'
 		text-decoration none
+
+
+@media screen and (min-width:980px)
+	
+	#menu-slide
+		display block !important
+
+	#button-action
+		display none
+	
+	.OptionMenu
+		background transparent
+		display inline-block
+		position absolute
+		right 2em
+		width auto
+		height 100%
+	
+	.OptionMenu-option
+		display inline-block
+		margin 0 0.5em
+		
+	.OptionMenu-link
+		color #6E5353
+		font-size 0.9em
+		height 26px
+		line-height 26px
+		padding 1em
+		transition 0s
+		border-top 5px solid transparent
+		transition 0.3s border-top-color
+		&:before
+			height 1.5em
+			border-right: 1px solid #000
+			content ''
+			position absolute
+			top 17px
+			right -1em
+		&:hover
+			background transparent
+			border-top-color red
+			
