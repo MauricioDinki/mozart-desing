@@ -39,10 +39,10 @@ body
 	border none
 	border-radius 5px
 	color white
+	display block
+	margin 0 auto
 	padding 0.4em 0.5em
 	width 90%
-	margin 0 auto
-	display block
 
 .Login-container
 	background white
@@ -58,35 +58,33 @@ body
 	padding 0
 
 .Login-input
-	width 90%
-	display block
-	margin 1em auto
 	background-color: #eee;
+	border none
 	border-radius 3px
 	color: #777;
+	display block
+	margin 1em auto
 	padding 0.5em
-	border none
 	text-align center
+	width 90%
 
 .Login-socialOptContainer
-	width 90%
 	margin 0.5em auto
 	text-align center
+	width 90%
 	
-
 .Login-socialOption
-	font-size 4em
 	display inline-block
+	font-size 4em
 	text-decoration none
 	
-
 .Login-title
+	color gray
 	display block
 	font-weight 500
 	margin 1em
 	padding 0
 	text-align center
-	color gray
 
 .Login-traditional
 	height auto
@@ -113,10 +111,10 @@ body
 .Navbar-list
 	list-style none
 	margin 0
-	padding 0
-	white-space nowrap
 	overflow-x auto
 	overflow-y hidden
+	padding 0
+	white-space nowrap
 
 .Navbar-option
 	display inline-block
@@ -125,8 +123,8 @@ body
 	background linear-gradient(45deg, #B23C2F 0%, rojo_mozart 100%)
 	display none
 	height 220px
-	width 100%
 	overflow hidden
+	width 100%
 
 .OptionMenu-option
 	display block
@@ -134,11 +132,11 @@ body
 .OptionMenu-link
 	color white
 	display block
-	padding 1em 0
 	margin 0
+	padding 1em 0
 	position relative
-	text-decoration none
 	text-align center
+	text-decoration none
 	transition 0.5s
 	&:hover
 		background #E53421
@@ -181,36 +179,35 @@ body
 	position relative
 
 .Work-image
+	border-bottom 5px solid azul_mozart
 	height 173px
 	margin 0
 	position relative
-	border-bottom 5px solid azul_mozart
 
 .Work-info
 	float right
 	width 240px
 
 .Work-item
+	border 1px solid gray
 	box-shadow 2px 2px 10px rgba(black, 0.5)
 	display inline-block
 	height auto
 	margin 0.6em 0.4em
 	position relative
 	width 300px
-	border 1px solid gray
 
 .Work-title
 	font-size 1.1em
 	font-style italic
 	font-weight 500
 	margin 0.8em 0 0 0
-	text-align center
 	padding-left 0.4em
+	text-align center
 
 	a
 		color black
 		text-decoration none
-
 
 @media screen and (min-width:980px)
 	
@@ -225,31 +222,31 @@ body
 	.OptionMenu
 		background transparent
 		display inline-block
+		height 100%
 		position absolute
 		right 2em
 		width auto
-		height 100%
 	
 	.OptionMenu-option
 		display inline-block
 		margin 0 0.5em
 		
 	.OptionMenu-link
+		border-top 5px solid transparent
 		color #6E5353
 		font-size 0.9em
 		height 26px
 		line-height 26px
 		padding 1em
-		transition 0s
-		border-top 5px solid transparent
 		transition 0.3s border-top-color
+		transition 0s
 		&:before
-			height 1.5em
 			border-right: 1px solid #000
 			content ''
+			height 1.5em
 			position absolute
-			top 17px
 			right -1em
+			top 17px
 		&:hover
 			background transparent
 			border-top-color red
@@ -257,32 +254,42 @@ body
 	/* Para El Menu */
 		
 	/* Para El Login*/
-	
+
+	.Login-container
+		width 70% !important
+
+	/* Para El Login*/
+
+
+@media screen and (min-width:480px)
+
+	/* Para El Login*/
+		
 	.Login-button
 		margin-bottom 3em
 		width 70%
 
 	.Login-container
-		width 70%
-		margin-top 1.5em
+		margin-top 2.5em
+		width 90%
 	
 	.Login-form
 		border-top 2px solid azul_mozart
-		width 80%
 		display block 
 		margin 0 auto
+		width 80%
 	
 	.Login-input
 		margin 2em auto
 	
 	.Login-social
 		border-top 2px solid azul_mozart
-		width 80%
 		display block
 		margin 0 auto
+		width 80%
 	
 	.Login-socialOption
 		margin 0em 0.3em
-
+	
 	/* Para El Login*/
-			
+
