@@ -1,0 +1,121 @@
+body
+	background #EDEDED
+
+.Header
+	background white
+	height 3.75em
+	position relative
+	top 0
+	width 100%
+	z-index 3
+	&.fixed
+		position fixed
+
+.Header-button
+	color naranja_mozart
+	cursor pointer
+	font-size 1.9em
+	position absolute
+	right 0.5em
+	top 0.3em
+	z-index 1
+	
+.Header-Logo
+	float left
+	margin 0.4em 0.4em 0.6em 1em
+	padding 0
+
+.Navbar
+	background azul_mozart
+	border-top 5px solid transparent
+	position fixed
+	text-align center
+	top 3.7em
+	width 100%
+	z-index 2
+
+.Navbar-link
+	color #538DEC
+	font-size 2.3em
+	padding 0.3em
+	text-decoration none
+	transition color 0.15s
+	&:hover
+		color naranja_mozart
+
+.Navbar-list
+	list-style none
+	margin 0
+	overflow-x auto
+	overflow-y hidden
+	padding 0
+	white-space nowrap
+
+.Navbar-option
+	display inline-block
+
+.OptionMenu
+	background linear-gradient(45deg, #B23C2F 0%, rojo_mozart 100%)
+	display none
+	height 220px
+	overflow hidden
+	width 100%
+
+.OptionMenu-option
+	display block
+	
+.OptionMenu-link
+	color white
+	display block
+	margin 0
+	padding 1em 0
+	position relative
+	text-align center
+	text-decoration none
+	transition 0.5s
+	&:hover
+		background #E53421
+
+.OptionMenu-list
+	margin 0
+	padding 0
+
+@media screen and (min-width:980px)
+
+	#menu-slide
+		display block !important
+
+	#button-action
+		display none
+	
+	.OptionMenu
+		background transparent
+		display inline-block
+		height 100%
+		position absolute
+		right 2em
+		width auto
+	
+	.OptionMenu-option
+		display inline-block
+		margin 0 0.5em
+		
+	.OptionMenu-link
+		border-top 5px solid transparent
+		color #6E5353
+		font-size 0.9em
+		height 26px
+		line-height 26px
+		padding 1em
+		transition 0.3s border-top-color
+		transition 0s
+		&:before
+			border-right: 1px solid #000
+			content ''
+			height 1.5em
+			position absolute
+			right -1em
+			top 17px
+		&:hover
+			background transparent
+			border-top-color red
