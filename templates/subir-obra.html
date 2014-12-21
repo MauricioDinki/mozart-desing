@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<title>Explorar - mozArt</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+	<link rel="icon" type="image/png" href="../static/img/favicon.png"/>
+</head>
+<body>
+	<header class="Header fixed">
+		<figure class="Header-logo">
+    		<img src="../static/img/logo.png" alt="mozArt" height="auto" width="150px">
+		</figure>
+		<div class="OptionMenu" id="menu-slide">
+			<ul class="OptionMenu-list">
+                <li class="OptionMenu-option">
+                    <a class="OptionMenu-link" href="">Perfil</a>
+                </li>
+				<li class="OptionMenu-option">
+                    <a class="OptionMenu-link" href="">+Obras</a>
+                </li>
+				<li class="OptionMenu-option"> 
+                    <a class="OptionMenu-link" href="">Configuración</a>
+                </li>
+				<li class="OptionMenu-option">
+                    <a class="OptionMenu-link" href="">Cerrar Sesión</a>
+                </li>
+			</ul>
+		</div>
+		<div class="Header-button menu-icon" id="button-action"></div>
+	</header>
+    <section class="Upload-container">
+    	<h2 class="Upload-title">Subir Una Obra</h2>
+    	<form action="" class="Upload-form">
+    		<input type="text" name="titulo" id="titulo" class="Upload-input" placeholder="Titulo">
+    		<textarea class="Upload-textarea"name="descripcion" id="descripcion" placeholder="Descripcion De La Obra"></textarea>
+	    	<select class="Upload-select" name="categoria" id="categoria">
+	    		<option value="" disabled selected>Categoria</option>
+				<option value="Dibujo/Pintura">Dibujo/Pintura</option>
+				<option value="Fotografia/Filme">Fotografia/Filme</option>
+				<option value="Teatro/Literatura">Teatro/Literatura</option>
+				<option value="Musica/Baile">Musica/Baile</option>
+				<option value="Escultura/Ceramica">Escultura/Ceramica</option>
+				<option value="Arte Digital">Arte Digital</option>
+				<option value="Otros">Otros</option>
+	    	</select>
+	    	<div class="Upload-fileContainer">
+	    		<span class="Upload-filename" id="cover-name">Cover de la Obra</span>
+	    		<input type="file" class="Upload-file" id="cover-file">
+	    	</div>
+	    	<div class="Upload-fileContainer">
+	    		<span class="Upload-filename" id="file-name">Archivo de la Obra</span>
+	    		<input type="file" class="Upload-file" id="file-file">
+	    	</div>
+	    	<button class="Upload-button" type="submit">Enviar</button>
+    	</form>
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
