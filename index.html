@@ -1,21 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="es" ng-app="mozArtApp">
 <head>
-	<meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-	<title>Login - mozArt</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400' rel='stylesheet' type='text/css'/>
-	<link rel="stylesheet" type="text/css" href="static/css/main.css"/>
-	<link rel="icon" type="image/png" href="static/img/favicon.png"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="static/css/estilos.css">
+	<link rel="stylesheet" href="static/css/fuentes.css">
+	<link rel="stylesheet" href="static/css/ng-tags-input.css">
+	<link rel="stylesheet" href="static/css/normalize.css">
+	<link rel="icon" type="image/png" href="static/img/favicon.png" />
+	<title ng-bind=" title + 'mozArt'">mozArt (nombre provisional)</title>
 </head>
 <body>
-	<header class="Header">
-		<figure class="Header-logo">
-    		<img src="static/img/logo.png" alt="mozArt" height="auto" width="150px"/>
-		</figure>
+	<header mozart-header>
 	</header>
-    <a class="Index-option"href="templates/home.html">Home</a>
-    <a class="Index-option"href="templates/login.html">Login</a>
-    <a class="Index-option"href="templates/register.html">Registro</a>
-    <a class="Index-option"href="templates/subir-obra.html">Subir Obra</a>
+	<main id="contenido" ng-view>
+	</main>
+	<script src="static/js/lib/angular.min.js"></script>
+	<script src="static/js/lib/angular-route.min.js"></script>
+	<script src="static/js/app.js"></script>
+	<script src="static/js/controllers.js"></script>
+	<script src="static/js/directives.js"></script>
+	<script src="static/js/services.js"></script>
+	<script src="static/js/ng-tags-input.min.js"></script>
 </body>
 </html>
